@@ -151,10 +151,17 @@ Tables include:
 
 ## **SQL Queries**
 [`overall_no_show_rates.sql`](SQL/01_no_show_rate.sql)
+
 [`overall_no_show_rate_by_department.sql`](SQL/02_rate_of_no_shows_by_department.sql)
+
 [`no_show_rate by_insurance_type.sql`](SQL/03_rate_of_no_shows_by_insurance.sql)
+
 [`no_show_rate by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql)
+
 [`no_show_rate by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql)
+
 [`no_show_rate by_no_show_month.sql`](SQL/06_rate_of_no_show_month.sql)
+
 [`no_show_rate by_no_show_patients.sql`](SQL/07_no_shows_count_3+_per_patient.sql)
+
 [`no_show_rate by_no_show_patients.sql`](SQL/08_no_shows_by_date.sql)
