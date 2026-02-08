@@ -42,7 +42,7 @@ Tables include:
 
 * Established a baseline KPI for the rest of the analysis.
 
-**SQL skills used:** `COUNT`, `COUNTIF`, `SAFE_DIVIDE`
+**SQL skills used:** COUNT, COUNTIF, SAFE_DIVIDE
 
 ### **2\. No-Show Rate by Department**
 
@@ -50,7 +50,7 @@ Tables include:
 
 * Identified departments with higher missed appointment rates.
 
-**SQL skills used:** `JOIN`, `GROUP BY`, aggregation
+**SQL skills used:** JOIN, GROUP BY, aggregation
 
 ### **3\. No-Show Rate by Insurance Type**
 
@@ -58,7 +58,7 @@ Tables include:
 
 * Highlighted potential access or engagement disparities.
 
-**SQL skills used:** `JOIN`, `GROUP BY`, filtering
+**SQL skills used:** JOIN, GROUP BY, filtering
 
 ### **4\.  No-Show Rate by Appointment Time**
 
@@ -77,16 +77,16 @@ Tables include:
 * Measured no-show rates by lead-time bucket.
 
 **SQL skills used:**  
- `WITH` (CTEs), `DATE_DIFF`, `CASE WHEN`, `SAFE_DIVIDE`, custom ordering
+ WITH (CTEs), DATE_DIFF, CASE WHEN, SAFE_DIVIDE, custom ordering
 
 ### **6\. Monthly No-Show Trend**
 
-* Grouped appointments by month using `DATE_TRUNC`.
+* Grouped appointments by month using DATE_TRUNC.
 
 * Calculated monthly no-show rates to identify trends over time.
 
 **SQL skills used:**  
- `DATE_TRUNC`, aggregation, time-series analysis
+ DATE_TRUNC, aggregation, time-series analysis
 
 ### **7\. Repeat No-Show Patients (Summary View)**
 
@@ -95,7 +95,7 @@ Tables include:
 * Created a patient-level summary showing total no-shows per patient.
 
 **SQL skills used:**  
- `GROUP BY`, `HAVING`, filtering
+ GROUP BY, HAVING, filtering
 
 ### **8\. Repeat No-Show Patients (Drill-Down View)**
 
