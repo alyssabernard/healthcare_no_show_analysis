@@ -1,5 +1,7 @@
 # **Healthcare Appointment No-Show Analysis**
 
+Analyzed healthcare appointment no-show data using SQL in BigQuery to identify trends and risk factors, including scheduling behavior and repeat no-show patients. Built structured queries using CTEs, JOINs, and aggregation to support actionable insights and operational improvements.
+
 ## **Project Overview**
 
 This project analyzes healthcare appointment data to better understand patterns and risk factors associated with patient no-shows. Using SQL in Google BigQuery, I explored overall no-show rates, demographic and operational breakdowns, scheduling behavior, time trends, and repeat no-show patterns. The goal of this analysis is to demonstrate practical SQL skills while answering realistic healthcare operations questions that could inform intervention strategies and scheduling improvements.
@@ -149,19 +151,26 @@ Tables include:
 
 * Behavioral pattern analysis
 
-## **SQL Queries**
-[`overall_no_show_rates.sql`](SQL/01_no_show_rate.sql)
+## **SQL Queries** 
+[`overall_no_show_rates.sql`](SQL/01_no_show_rate.sql) - Calculates the overall appointment no-show rate to establish a baseline performance metric.
 
-[`overall_no_show_rate_by_department.sql`](SQL/02_rate_of_no_shows_by_department.sql)
+[`overall_no_show_rate_by_department.sql`](SQL/02_rate_of_no_shows_by_department.sql) - Compares no-show rates across provider departments to identify operational differences.
 
-[`no_show_rate by_insurance_type.sql`](SQL/03_rate_of_no_shows_by_insurance.sql)
+[`no_show_rate by_insurance_type.sql`](SQL/03_rate_of_no_shows_by_insurance.sql) - Analyzes no-show rates across different insurance providers to explore potiental access disparities.
 
-[`no_show_rate by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql)
+[`no_show_rate by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql) - Compares no-show rates across different appointment times(morning, afternoon, evening) to explore whether or not the time of day has an impact on no-show rates.
 
-[`no_show_rate by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql)
+[`no_show_rate by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql) - Buckets appointments by how far in advance they were scheduled and calculates no-show rates for each lead-time range.
 
-[`no_show_rate by_no_show_month.sql`](SQL/06_rate_of_no_show_month.sql)
+[`no_show_rate by_no_show_month.sql`](SQL/06_rate_of_no_show_month.sql) - Tracks monthly no-show rates over time to identify trends and seasonal patterns.
 
-[`no_show_rate by_no_show_patients.sql`](SQL/07_no_shows_count_3+_per_patient.sql)
+[`no_show_rate by_no_show_patients.sql`](SQL/07_no_shows_count_3+_per_patient.sql) - Identifies patients with two or more missed appointments and summarizes their total no-show counts.
 
-[`no_show_rate by_no_show_patients.sql`](SQL/08_no_shows_by_date.sql)
+[`no_show_rate by_no_show_patients.sql`](SQL/08_no_shows_by_date.sql) - Provides appointment-level detail for repeat no-show patients, showing when missed appointments occurred.
+
+### How to run
+These SQL scripts are designed for **Google BigQuery**. To run them:
+1. Upload the CSVs to BigQuery tables.
+2. Set your dataset names to match the script paths.
+3. Run each `.sql` file in the BigQuery editor.
+
