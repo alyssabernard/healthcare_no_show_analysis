@@ -160,7 +160,7 @@ Tables include:
 
 [`no_show_rate by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql) - Compares no-show rates across different appointment times(morning, afternoon, evening) to explore whether or not the time of day has an impact on no-show rates.
 
-[`no_show_rate by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql) - Buckets appointments by how far in advance they were scheduled and calculates no-show rates for each lead-time range.
+[`no_show_rate_by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql) - Buckets appointments by how far in advance they were scheduled and calculates no-show rates for each lead-time range.
 
 [`no_show_rate by_no_show_month.sql`](SQL/06_rate_of_no_show_month.sql) - Tracks monthly no-show rates over time to identify trends and seasonal patterns.
 
