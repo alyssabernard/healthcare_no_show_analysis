@@ -78,7 +78,7 @@ Tables include:
 
 **SQL skills used:** grouping, aggregation
 
-[`no_show_rate by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql)
+[`no_show_rate_by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql)
 
 ### **5\. Lead Time Analysis (Days Scheduled in Advance)**
 
@@ -88,7 +88,7 @@ Tables include:
 
 * Measured no-show rates by lead-time bucket.
 * 
-[`no_show_rate by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql)
+[`no_show_rate_by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql)
 
 **SQL skills used:**  
  WITH (CTEs), DATE_DIFF, CASE WHEN, SAFE_DIVIDE, custom ordering
@@ -101,7 +101,7 @@ Tables include:
 
 **SQL skills used:**  
  DATE_TRUNC, aggregation, time-series analysis
-[`no_show_rate by_no_show_month.sql`](SQL/06_rate_of_no_show_month.sql)
+[`no_show_rate_by_no_show_month.sql`](SQL/06_rate_of_no_show_month.sql)
 
 ### **7\. Repeat No-Show Patients (Summary View)**
 
@@ -111,7 +111,7 @@ Tables include:
 
 **SQL skills used:**  
  GROUP BY, HAVING, filtering
- [`no_show_rate by_no_show_patients.sql`](SQL/07_no_shows_count_3+_per_patient.sql)
+ [`no_show_rate_by_no_show_patients.sql`](SQL/07_no_shows_count_3+_per_patient.sql)
 
 
 ### **8\. Repeat No-Show Patients (Drill-Down View)**
@@ -122,7 +122,7 @@ Tables include:
 
 **SQL skills used:**  
  CTEs, joins between summary and detail tables, ordering
-  [`no_show_rate by_no_show_patients.sql`](SQL/08_no_shows_by_date.sql)
+  [`no_show_rate_by_no_show_patients.sql`](SQL/08_no_shows_by_date.sql)
 
 
 ## **Key Takeaways**
@@ -156,17 +156,17 @@ Tables include:
 
 [`overall_no_show_rate_by_department.sql`](SQL/02_rate_of_no_shows_by_department.sql) - Compares no-show rates across provider departments to identify operational differences.
 
-[`no_show_rate by_insurance_type.sql`](SQL/03_rate_of_no_shows_by_insurance.sql) - Analyzes no-show rates across different insurance providers to explore potiental access disparities.
+[`no_show_rate_by_insurance_type.sql`](SQL/03_rate_of_no_shows_by_insurance.sql) - Analyzes no-show rates across different insurance providers to explore potiental access disparities.
 
-[`no_show_rate by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql) - Compares no-show rates across different appointment times(morning, afternoon, evening) to explore whether or not the time of day has an impact on no-show rates.
+[`no_show_rate_by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql) - Compares no-show rates across different appointment times(morning, afternoon, evening) to explore whether or not the time of day has an impact on no-show rates.
 
 [`no_show_rate_by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql) - Buckets appointments by how far in advance they were scheduled and calculates no-show rates for each lead-time range.
 
-[`no_show_rate by_no_show_month.sql`](SQL/06_rate_of_no_show_month.sql) - Tracks monthly no-show rates over time to identify trends and seasonal patterns.
+[`no_show_rate_by_no_show_month.sql`](SQL/06_rate_of_no_show_month.sql) - Tracks monthly no-show rates over time to identify trends and seasonal patterns.
 
-[`no_show_rate by_no_show_patients.sql`](SQL/07_no_shows_count_3+_per_patient.sql) - Identifies patients with two or more missed appointments and summarizes their total no-show counts.
+[`no_show_rate_by_no_show_patients.sql`](SQL/07_no_shows_count_3+_per_patient.sql) - Identifies patients with two or more missed appointments and summarizes their total no-show counts.
 
-[`no_show_rate by_no_show_patients.sql`](SQL/08_no_shows_by_date.sql) - Provides appointment-level detail for repeat no-show patients, showing when missed appointments occurred.
+[`no_show_rate_by_no_show_patients.sql`](SQL/08_no_shows_by_date.sql) - Provides appointment-level detail for repeat no-show patients, showing when missed appointments occurred.
 
 ### How to run
 These SQL scripts are designed for **Google BigQuery**. To run them:
