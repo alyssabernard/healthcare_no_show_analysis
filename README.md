@@ -43,6 +43,7 @@ Tables include:
 * Established a baseline KPI for the rest of the analysis.
 
 **SQL skills used:** COUNT, COUNTIF, SAFE_DIVIDE
+
 [`overall_no_show_rates.sql`](SQL/01_no_show_rate.sql)
 
 ### **2\. No-Show Rate by Department**
@@ -52,6 +53,7 @@ Tables include:
 * Identified departments with higher missed appointment rates.
 
 **SQL skills used:** JOIN, GROUP BY, aggregation
+
 [`overall_no_show_rate_by_department.sql`](SQL/02_rate_of_no_shows_by_department.sql)
 
 
@@ -62,6 +64,7 @@ Tables include:
 * Highlighted potential access or engagement disparities.
 
 **SQL skills used:** JOIN, GROUP BY, filtering
+
 [`no_show_rate by_insurance_type.sql`](SQL/03_rate_of_no_shows_by_insurance.sql)
 
 
@@ -72,6 +75,7 @@ Tables include:
 * Explored whether time-of-day scheduling impacts attendance.
 
 **SQL skills used:** grouping, aggregation
+
 [`no_show_rate by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql)
 
 ### **5\. Lead Time Analysis (Days Scheduled in Advance)**
@@ -81,6 +85,7 @@ Tables include:
 * Bucketed lead time into ranges (e.g., 1–7 days, 8–14 days).
 
 * Measured no-show rates by lead-time bucket.
+* 
 [`no_show_rate by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql)
 
 **SQL skills used:**  
