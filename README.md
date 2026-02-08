@@ -67,7 +67,7 @@ Tables include:
 
 **SQL skills used:** JOIN, GROUP BY, filtering
 
-[`no_show_rate by_insurance_type.sql`](SQL/03_rate_of_no_shows_by_insurance.sql)
+[`no_show_rate_by_insurance_type.sql`](SQL/03_rate_of_no_shows_by_insurance.sql)
 
 
 ### **4\.  No-Show Rate by Appointment Time**
