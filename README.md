@@ -43,6 +43,7 @@ Tables include:
 * Established a baseline KPI for the rest of the analysis.
 
 **SQL skills used:** COUNT, COUNTIF, SAFE_DIVIDE
+[`overall_no_show_rates.sql`](SQL/01_no_show_rate.sql)
 
 ### **2\. No-Show Rate by Department**
 
@@ -51,6 +52,8 @@ Tables include:
 * Identified departments with higher missed appointment rates.
 
 **SQL skills used:** JOIN, GROUP BY, aggregation
+[`overall_no_show_rate_by_department.sql`](SQL/02_rate_of_no_shows_by_department.sql)
+
 
 ### **3\. No-Show Rate by Insurance Type**
 
@@ -59,6 +62,8 @@ Tables include:
 * Highlighted potential access or engagement disparities.
 
 **SQL skills used:** JOIN, GROUP BY, filtering
+[`no_show_rate by_insurance_type.sql`](SQL/03_rate_of_no_shows_by_insurance.sql)
+
 
 ### **4\.  No-Show Rate by Appointment Time**
 
@@ -67,6 +72,7 @@ Tables include:
 * Explored whether time-of-day scheduling impacts attendance.
 
 **SQL skills used:** grouping, aggregation
+[`no_show_rate by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql)
 
 ### **5\. Lead Time Analysis (Days Scheduled in Advance)**
 
@@ -75,6 +81,7 @@ Tables include:
 * Bucketed lead time into ranges (e.g., 1–7 days, 8–14 days).
 
 * Measured no-show rates by lead-time bucket.
+[`no_show_rate by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql)
 
 **SQL skills used:**  
  WITH (CTEs), DATE_DIFF, CASE WHEN, SAFE_DIVIDE, custom ordering
@@ -87,6 +94,7 @@ Tables include:
 
 **SQL skills used:**  
  DATE_TRUNC, aggregation, time-series analysis
+[`no_show_rate by_no_show_month.sql`](SQL/06_rate_of_no_show_month.sql)
 
 ### **7\. Repeat No-Show Patients (Summary View)**
 
@@ -96,6 +104,8 @@ Tables include:
 
 **SQL skills used:**  
  GROUP BY, HAVING, filtering
+ [`no_show_rate by_no_show_patients.sql`](SQL/07_no_shows_count_3+_per_patient.sql)
+
 
 ### **8\. Repeat No-Show Patients (Drill-Down View)**
 
@@ -105,6 +115,8 @@ Tables include:
 
 **SQL skills used:**  
  CTEs, joins between summary and detail tables, ordering
+  [`no_show_rate by_no_show_patients.sql`](SQL/08_no_shows_by_date.sql)
+
 
 ## **Key Takeaways**
 
@@ -132,3 +144,12 @@ Tables include:
 
 * Behavioral pattern analysis
 
+## **SQL Queries**
+[`overall_no_show_rates.sql`](SQL/01_no_show_rate.sql)
+[`overall_no_show_rate_by_department.sql`](SQL/02_rate_of_no_shows_by_department.sql)
+[`no_show_rate by_insurance_type.sql`](SQL/03_rate_of_no_shows_by_insurance.sql)
+[`no_show_rate by_appointment_time.sql`](SQL/04_rate_of_no_shows_by_time.sql)
+[`no_show_rate by_appointment_time.sql`](SQL/05_rate_of_no_shows_by_lead_time.sql)
+[`no_show_rate by_no_show_month.sql`](SQL/06_rate_of_no_show_month.sql)
+[`no_show_rate by_no_show_patients.sql`](SQL/07_no_shows_count_3+_per_patient.sql)
+[`no_show_rate by_no_show_patients.sql`](SQL/08_no_shows_by_date.sql)
